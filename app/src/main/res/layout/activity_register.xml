@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/txtLogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="COVEN"
+        android:textColor="#1A1C1B"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/editRegREPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editRegPass"
+        app:layout_constraintStart_toStartOf="@+id/editRegPass"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegREPass" />
+
+    <TextView
+        android:id="@+id/txtRegREPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Re-enter Password"
+        android:textAlignment="center"
+        android:textColor="#1A1B1C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegPass"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/txtRegPass"
+        app:layout_constraintTop_toBottomOf="@+id/editRegPass" />
+
+    <TextView
+        android:id="@+id/txtLogPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="E-mail"
+        android:textAlignment="center"
+        android:textColor="#1A1B1C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegUser"
+        app:layout_constraintStart_toStartOf="@+id/txtRegUser"
+        app:layout_constraintTop_toBottomOf="@+id/editRegUser" />
+
+    <TextView
+        android:id="@+id/txtRegTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="COVEN"
+        android:textColor="#1A1C1B"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/txtRegPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="#1A1B1C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLogPass"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/txtLogPass"
+        app:layout_constraintTop_toBottomOf="@+id/editRegEmail" />
+
+    <TextView
+        android:id="@+id/txtRegUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#1A1B1C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogTitle" />
+
+    <EditText
+        android:id="@+id/editRegUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/txtRegUser"
+        app:layout_constraintStart_toStartOf="@+id/txtRegUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegUser" />
+
+    <EditText
+        android:id="@+id/editRegEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editRegUser"
+        app:layout_constraintStart_toStartOf="@+id/editRegUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogPass" />
+
+    <EditText
+        android:id="@+id/editRegPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editRegEmail"
+        app:layout_constraintStart_toStartOf="@+id/editRegEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegPass" />
+
+    <Button
+        android:id="@+id/btnRegReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="#49325C"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/editRegREPass"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/editRegREPass"
+        app:layout_constraintTop_toBottomOf="@+id/editRegREPass" />
+
+    <Button
+        android:id="@+id/btnRegBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#746184"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegReg"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/btnRegReg"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegReg"
+        app:layout_constraintVertical_bias="0.297" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
